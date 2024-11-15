@@ -31,6 +31,69 @@ const wishlistItems = [
     name: "Track Sneakers",
     image: "https://subfare.neocities.org/gave4.png",
     price: "1000 KR",
+    description: "Her må kanskje Amanda eller Ruben hjelpe deg/dere å kjøpe siden det er fra Tise 😂",
+    link: "https://tise.com/t/kbcqnfKpn"
+  },
+  {
+    name: "Weezer - Pinkerton (Vinyl)",
+    image: "https://subfare.neocities.org/gave5.png",
+    price: "449 KR",
+    description: "Favoritt albumet mitt av favoritt bandet mitt.",
+    link: "https://www.platekompaniet.no/musikk/vinyl/rock/weezer-pinkerton-uk-import-vinyl"
+  },
+  {
+    name: "Weezer & Jeff Buckley Vinyler",
+    image: "https://subfare.neocities.org/gave6.png",
+    price: "550 KR",
+    description: "Det er 2 for 550 KR på begge disse.",
+    link: "https://www.platekompaniet.no/salg/vinyl-2-for-550?refinementList%5Bartists%5D%5B0%5D=Jeff%20Buckley&refinementList%5Bartists%5D%5B1%5D=Weezer&range%5Bactive_price%5D%5Bmin%5D=306"
+  },
+  {
+    name: "Reworked Bukse",
+    image: "https://subfare.neocities.org/gave7.png",
+    price: "1200 KR",
+    description: "Buksene er laget selv av han som selger det.",
+    link: "https://tise.com/t/5PO39Yvx4"
+  },
+  {
+    name: "Post Malone Tee",
+    image: "https://subfare.neocities.org/gave8.png",
+    price: "100 KR",
+    description: "Baksiden er kul og liker at den er litt fadet",
+    link: "https://tise.com/t/XOgxdoKB"
+  },
+  {
+    name: "Zip Up Jeans",
+    image: "https://subfare.neocities.org/gave9.png",
+    price: "950 KR",
+    description: "Dette er også bukser som er laget av selgeren.",
+    link: "https://tise.com/t/6Pgzmga6V"
+  },
+  {
+    name: "Nissan Skyline R34 GT-R",
+    image: "https://subfare.neocities.org/gave10.png",
+    price: "1.250000 KR",
+    description: "Dette er verdt det",
+    link: "https://www.finn.no/mobility/item/371565286"
+  },
+  {
+    name: "Bokser 5-Pack",
+    image: "https://subfare.neocities.org/gave11.png",
+    price: "299 KR",
+    description: "Størrelse M/L",
+    link: "https://www2.hm.com/no_no/productpage.1070271001.html"
+  },
+  {
+    name: "Blue Dragon Katana",
+    image: "https://subfare.neocities.org/gave12.png",
+    price: "530 KR",
+    description: "Veldig kult sverd",
+    link: "https://minikatana.com/products/blue-dragon-katana-metal-dull"
+  },
+  {
+    name: "Adventure Book",
+    image: "https://i.postimg.cc/bwKkt21j/LOOKIN-OLD.png",
+    price: "20 KR",
     description: "An exciting book filled with adventures.",
     link: "https://example.com/book"
   },

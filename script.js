@@ -1,163 +1,147 @@
-const wishlistItems = [
-  {
-    name: "After-Eight Skjokolade",
-    image: "https://subfare.neocities.org/gave1.png",
-    price: "40 KR",
-    description: "Prisen kan variere og du kan få den over alt.",
-    link: "https://meny.no/varer/snacks-godteri/konfekt/after-eight-5000189363069"
-  },
-  {
-    name: "One Million Parfyme",
-    image: "https://subfare.neocities.org/gave2.png",
-    price: "900 KR",
-    description: "Dette er 100ML men ønsker meg også 50ML.",
-    link: "https://www.prisjakt.no/product.php?p=418134"
-  },
-  {
-    name: "Mentos Tyggis",
-    image: "https://subfare.neocities.org/gave3.png",
-    price: "23 KR",
-    description: "Denne finner du bare på Normal.",
-    link: "https://www.normal.no/kategorier/snacks-og-drikkevarer/"
-  },
-  {
-    name: "Headset",
-    image: "https://i.postimg.cc/bwKkt21j/LOOKIN-OLD.png",
-    price: "9999999 KR",
-    description: "skal fikse denne senere.",
-    link: "https://example.com/book"
-  },
-  {
-    name: "Track Sneakers",
-    image: "https://subfare.neocities.org/gave4.png",
-    price: "1000 KR",
-    description: "Her må kanskje Amanda eller Ruben hjelpe deg/dere å kjøpe siden det er fra Tise 😂",
-    link: "https://tise.com/t/kbcqnfKpn"
-  },
-  {
-    name: "Weezer - Pinkerton (Vinyl)",
-    image: "https://subfare.neocities.org/gave5.png",
-    price: "449 KR",
-    description: "Favoritt albumet mitt av favoritt bandet mitt.",
-    link: "https://www.platekompaniet.no/musikk/vinyl/rock/weezer-pinkerton-uk-import-vinyl"
-  },
-  {
-    name: "Weezer & Jeff Buckley Vinyler",
-    image: "https://subfare.neocities.org/gave6.png",
-    price: "550 KR",
-    description: "Det er 2 for 550 KR på begge disse.",
-    link: "https://www.platekompaniet.no/salg/vinyl-2-for-550?refinementList%5Bartists%5D%5B0%5D=Jeff%20Buckley&refinementList%5Bartists%5D%5B1%5D=Weezer&range%5Bactive_price%5D%5Bmin%5D=306"
-  },
-  {
-    name: "Reworked Bukse",
-    image: "https://subfare.neocities.org/gave7.png",
-    price: "1200 KR",
-    description: "Buksene er laget selv av han som selger det.",
-    link: "https://tise.com/t/5PO39Yvx4"
-  },
-  {
-    name: "Post Malone Tee",
-    image: "https://subfare.neocities.org/gave8.png",
-    price: "100 KR",
-    description: "Baksiden er kul og liker at den er litt fadet",
-    link: "https://tise.com/t/XOgxdoKB"
-  },
-  {
-    name: "Zip Up Jeans",
-    image: "https://subfare.neocities.org/gave9.png",
-    price: "950 KR",
-    description: "Dette er også bukser som er laget av selgeren.",
-    link: "https://tise.com/t/6Pgzmga6V"
-  },
-  {
-    name: "Nissan Skyline R34 GT-R",
-    image: "https://subfare.neocities.org/gave10.png",
-    price: "1.250000 KR",
-    description: "Dette er verdt det",
-    link: "https://www.finn.no/mobility/item/371565286"
-  },
-  {
-    name: "Bokser 5-Pack",
-    image: "https://subfare.neocities.org/gave11.png",
-    price: "299 KR",
-    description: "Størrelse M/L",
-    link: "https://www2.hm.com/no_no/productpage.1070271001.html"
-  },
-  {
-    name: "Blue Dragon Katana",
-    image: "https://subfare.neocities.org/gave12.png",
-    price: "530 KR",
-    description: "Veldig kult sverd",
-    link: "https://minikatana.com/products/blue-dragon-katana-metal-dull"
-  },
-  {
-    name: "Adventure Book",
-    image: "https://i.postimg.cc/bwKkt21j/LOOKIN-OLD.png",
-    price: "20 KR",
-    description: "An exciting book filled with adventures.",
-    link: "https://example.com/book"
-  },
-  {
-    name: "Adventure Book",
-    image: "https://i.postimg.cc/bwKkt21j/LOOKIN-OLD.png",
-    price: "20 KR",
-    description: "An exciting book filled with adventures.",
-    link: "https://example.com/book"
-  },
-  {
-    name: "Adventure Book",
-    image: "https://i.postimg.cc/bwKkt21j/LOOKIN-OLD.png",
-    price: "20 KR",
-    description: "An exciting book filled with adventures.",
-    link: "https://example.com/book"
-  },
-  {
-    name: "Adventure Book",
-    image: "https://i.postimg.cc/bwKkt21j/LOOKIN-OLD.png",
-    price: "20 KR",
-    description: "An exciting book filled with adventures.",
-    link: "https://example.com/book"
-  },
-];
-
-function displayWishlist() {
-  const wishlistContainer = document.getElementById('wishlist');
-  wishlistContainer.innerHTML = '';
-
-  wishlistItems.forEach(item => {
-    const itemDiv = document.createElement('div');
-    itemDiv.classList.add('wishlist-item');
-
-    itemDiv.innerHTML = `
-      <div class="image-container">
-        <img src="${item.image}" alt="${item.name}">
-      </div>
-      <h3>${item.name}</h3>
-      <p class="price">${item.price}</p>
-      <p>${item.description}</p>
-      <div class="button-container">
-        <a href="${item.link}" target="_blank" class="buy-button">Kjøp Her</a>
-      </div>
-    `;
-
-    wishlistContainer.appendChild(itemDiv);
-  });
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
 }
 
-// Sort by price (low to high or high to low)
-function sortWishlist(direction) {
-  if (direction === 'low') {
-    wishlistItems.sort((a, b) => parseFloat(a.price.replace('$', '')) - parseFloat(b.price.replace('$', '')));
-  } else if (direction === 'high') {
-    wishlistItems.sort((a, b) => parseFloat(b.price.replace('$', '')) - parseFloat(a.price.replace('$', '')));
+.wishlist-container {
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  background: #e0e0e0 url("https://subfare.neocities.org/bakgrunn.png") center center / cover no-repeat;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  opacity: 0.9;
+}
+
+.title-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.title-image {
+  max-width: 100%;
+  height: auto;
+}
+
+#wishlist {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Default to 3 items per row on desktop */
+  gap: 20px;
+}
+
+.wishlist-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  max-width: 220px;
+  margin: 0 auto;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.wishlist-item h3 {
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+  text-shadow: none;
+  margin-bottom: 5px;
+}
+
+.wishlist-item p {
+  font-size: 12px;
+  color: #555;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.wishlist-item .price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.buy-button {
+  display: inline-block;
+  padding: 15px 25px; /* Increased padding for a bigger button */
+  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px; /* Increased font size */
+  transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Darker black with 70% transparency on hover */
+}
+
+/* Sort buttons styling */
+.sort-buttons {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  gap: 10px;
+  flex-wrap: wrap; /* Ensures they don't overflow in smaller screens */
+}
+
+.sort-button {
+  padding: 5px 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sort-button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 768px) {
+  #wishlist {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  displayWishlist(); // Re-render after sorting
+  .wishlist-item {
+    max-width: 180px;
+    padding: 15px;
+  }
+
+  .sort-buttons {
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .sort-button {
+    margin-bottom: 10px;
+    width: auto;
+    max-width: 150px;
+  }
 }
-
-// Add event listeners for sort buttons
-document.getElementById('low-to-high').addEventListener('click', () => sortWishlist('low'));
-document.getElementById('high-to-low').addEventListener('click', () => sortWishlist('high'));
-
-// Initial display of wishlist
-displayWishlist();
